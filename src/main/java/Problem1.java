@@ -2,6 +2,11 @@ import java.util.Arrays;
 
 public class Problem1 {
 
+    //Algorithm reminder from: https://www.geeksforgeeks.org/binary-search/
+    //Solution by Nicholas Bestauros
+
+    //iterative would probably be faster than this specific recursive solution because I decided to copy the array
+
     // Do not change signature (function name, parameters)
     public static int binarySearch(int[] data, int target) {
         //we are told the array is sorted
