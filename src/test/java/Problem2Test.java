@@ -14,6 +14,11 @@ public class Problem2Test {
                 {4,3,2,1},
                 {0},
                 {1,0},
+                {1,4,3,5,7,9,2,100,40,0},
+                {-5,-10,20},
+                {-5,-3,-20,-7},
+                {-5,-3,5,20,-4,-40,500},
+                {-5,-5,3,-5,-5,3},
                 {}
         };
 
@@ -23,14 +28,14 @@ public class Problem2Test {
             inputsSorted[i] = Arrays.copyOf(inputsWeSort[i],inputsWeSort[i].length);
             Arrays.sort(inputsSorted[i]);
         }
-        int answer[] = {3,0};
 
         assertEquals(inputsWeSort.length, inputsSorted.length);
-        assertEquals(inputsWeSort.length, answer.length);
 
         for (int i=0; i<inputsSorted.length; i++) {
             Problem2.bubbleSort(inputsWeSort[i]);
-            assertEquals(inputsWeSort[i], inputsSorted[i]);
+            //https://www.java2novice.com/junit-examples/assert-array-equals/
+            assertArrayEquals(inputsWeSort[i], inputsSorted[i]);
+
         }
     }
 
