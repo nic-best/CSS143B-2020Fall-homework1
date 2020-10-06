@@ -32,4 +32,42 @@ public class Problem1Test {
             assertEquals(expected, actual);
         }
     }
+
+    @Test
+    public void testDuplicateNums() {
+        int inputs[][] = {
+                {3,2,4,5,5,6},
+                {0,0,0,0,0}
+        };
+        int targets[] = {5,0};
+        int answer[] = {3,0};
+
+        assertEquals(inputs.length, targets.length);
+        assertEquals(inputs.length, answer.length);
+
+        for (int i=0; i<inputs.length; i++) {
+            int actual = Problem1.binarySearch(inputs[i], targets[i]);
+            int expected = answer[i];
+            assertEquals(expected, actual);
+        }
+    }
+
+    @Test
+    public void testGreaterThanMid() {
+        int inputs[][] = {
+                {3,2,4,4,5,6,7,8,9}
+        };
+        int targets[] = {8};
+        int answer[] = {7};
+
+        assertEquals(inputs.length, targets.length);
+        assertEquals(inputs.length, answer.length);
+
+        for (int i=0; i<inputs.length; i++) {
+            int actual = Problem1.binarySearch(inputs[i], targets[i]);
+            int expected = answer[i];
+            assertEquals(expected, actual);
+        }
+    }
+
 }
