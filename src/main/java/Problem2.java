@@ -16,7 +16,7 @@ public class Problem2 {
         in an iteration
          */
         for(int outer = 0; outer<data.length-1; outer++){
-            for(int inner = 0; inner<data.length-1; inner++){
+            for(int inner = 0; inner<data.length-1-outer; inner++){
                 if(data[inner]>data[inner+1]){
                     int temp = data[inner];
                     data[inner] = data[inner+1];

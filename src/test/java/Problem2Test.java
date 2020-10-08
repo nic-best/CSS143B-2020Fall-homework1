@@ -28,7 +28,7 @@ public class Problem2Test {
             inputsSorted[i] = Arrays.copyOf(inputsWeSort[i],inputsWeSort[i].length);
             Arrays.sort(inputsSorted[i]);
         }
-
+        //check if the new array is the same length as the old one
         assertEquals(inputsWeSort.length, inputsSorted.length);
 
         for (int i=0; i<inputsSorted.length; i++) {
